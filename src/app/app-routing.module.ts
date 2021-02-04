@@ -35,6 +35,9 @@ const routes: Routes = [
           item: ItemResolve
         }}
     ]},
+  {path: 'catalog',
+    loadChildren: './catalog/catalog.module#CatalogModule'
+  },
   {path: '**', component: Code404Component}
 ];
 @NgModule({
